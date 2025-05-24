@@ -65,7 +65,7 @@ Development Fund (CDF)
   <div class='paper-box-text' markdown="1">
   **University of Michigan**, *Ann Arbor, Michigan*
 
-  Phd Student, Michigan Robotics Department
+  PhD Student, Michigan Robotics Department
 
   *Aug 2025 – Present*
 
