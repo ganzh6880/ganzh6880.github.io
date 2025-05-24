@@ -21,9 +21,9 @@ redirect_from:
 
 # 👋🏼 Hi there, I am Zhen Hao!
 
-I am a Robotics Research Engineer @ Institute for Infocomm Research (I2R), A\*STAR. I have spent great time working with [Dr. Michael Chuah](https://www.linkedin.com/in/michaelchuah/?originalSubdomain=sg) and [Dr. Albertus Hendrawan Adiwahono](https://www.linkedin.com/in/albertus-hendrawan-adiwahono-10608926a/?originalSubdomain=sg) on advancing legged robot capabilities. My research interests lies in **Embodied Navigation, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD.
+I am a first-year Robotics PhD student at the Robotics Department, University of Michigan, advised by [Prof. Bernadette Bucher](https://bucherb.github.io/). My research interests lies in **Embodied Navigation, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD!
 
-Previously, I earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore. My final year thesis has been supervised by [Prof. Xie Lihua] on  Vision-based Robot Navigation via DRL.
+Previously, I am a Robotics Research Engineer @ Institute for Infocomm Research (I2R) and a member of Embodied Intelligence Task Force in A\*STAR. I have spent great time working with [Dr. Michael Chuah](https://www.linkedin.com/in/michaelchuah/?originalSubdomain=sg) on advancing legged robot capabilities and pushing boundaries in Physical Intelligence. I have earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore. My final year thesis has been supervised by [Prof. Xie Lihua] on  Vision-based Robot Navigation via DRL.
 
 I envision mobile robots go anywhere anytime autonomously and intelligently with understanding of self and environment, leveraging the power of machine learning to enhance embodied skills acquisition and adaptation.
 
@@ -31,6 +31,8 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 
 
 # 🔥 News
+- ***2025.04:*** Excited to share that I will be starting my PhD journey this fall at the Robotics Department, UM under Prof. Bernadette Bucher!
+- ***2025.03:*** Proud to announce the team has been awarded the **2024 A\*STAR Career Development Fund (CDF)** on ”Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”
 - ***2024.06:*** Extremely honoured to be awarded the **A\*STAR National Science Scholarship PhD!**
 
 # 📝 Publications 
@@ -50,6 +52,8 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
+- ***2025.03:*** ”Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”, 2024 A*STAR Career
+Development Fund (CDF)
 - ***2024.06:*** A*STAR National Science Scholarship **(NSS-PhD, 5-yr funding for Ph.D. study)**, Singapore
 - ***2019.08:*** Dean List’s Academic Year 2018/2019 (Top 5% of the Cohort)
 - ***2019.06:*** NTU EEE Partial Financial Award for GEM Explorer
@@ -57,6 +61,23 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 - ***2017.07:*** GCE A-Level High Achiever Award (4A*)
 
 # 📖 Educations
+<div class='paper-box-right'>
+  <div class='paper-box-text' markdown="1">
+  **University of Michigan**, *Ann Arbor, Michigan*
+
+  Phd Student, Michigan Robotics Department
+
+  *Aug 2025 – Present*
+
+  Advisor: [Prof. Bernadette Bucher](https://bucherb.github.io/)
+  </div>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/umich.png' alt="sym" width="250" style="padding: 10px">
+    </div>
+  </div>
+</div>
+
 <div class='paper-box-right'>
   <div class='paper-box-text' markdown="1">
   **Nanyang Technological University (NTU)**, *Singapore*
