@@ -63,7 +63,7 @@ Development Fund (CDF)
 # 📖 Educations
 <div class='paper-box-right'>
   <div class='paper-box-text' markdown="1">
-  **University of Michigan**, *Ann Arbor, Michigan*
+  **University of Michigan**, *Ann Arbor, Michigan, USA*
 
   PhD Student, Michigan Robotics Department
 
