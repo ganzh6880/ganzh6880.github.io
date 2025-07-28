@@ -21,7 +21,7 @@ redirect_from:
 
 # 👋🏼 Hi there, I am Zhen Hao!
 
-I am a first-year Robotics PhD student at the Robotics Department, University of Michigan, advised by [Prof. Bernadette Bucher](https://bucherb.github.io/). My research interests lies in **Embodied Navigation, Physical Intelligence, Interactive Object Search, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD!
+I am a first-year Robotics PhD student @ Robotics Department, University of Michigan, advised by [Prof. Bernadette Bucher]. My research interests lies in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD!
 
 Previously, I am a Robotics Research Engineer @ Institute for Infocomm Research (I2R) and a member of Embodied Intelligence Task Force in A\*STAR. I have spent great time working with [Dr. Michael Chuah](https://www.linkedin.com/in/michaelchuah/?originalSubdomain=sg) on advancing legged robot capabilities and pushing boundaries in Physical Intelligence. I have earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore. My final year thesis has been supervised by [Prof. Xie Lihua] on Vision-based Robot Navigation via DRL.
 
@@ -31,7 +31,7 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 
 
 # 🔥 News
-- ***2025.07:*** Proud to share the team has been selected for **NVIDIA Academic Grant Program** on "Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation", lead by Prof. Shi Fan (NUS), Dr. Michael Chuah (A*STAR)
+- ***2025.07:*** Proud to share the team has been selected for [**NVIDIA Academic Grant Program**](https://www.linkedin.com/posts/fanshi-robot_we-are-honored-to-receive-the-%F0%9D%90%8D%F0%9D%90%95%F0%9D%90%88%F0%9D%90%83-activity-7355431811486732288-VQ3f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg) on "Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation", lead by [Prof. Shi Fan](https://fanshi14.github.io/me/) (NUS), Dr. Michael Chuah (A*STAR)
 - ***2025.04:*** Excited to share that I will be starting my PhD journey this fall at the Robotics Department, UofM under Prof. Bernadette Bucher!
 - ***2025.03:*** Proud to announce the team has been awarded the **2024 A\*STAR Career Development Fund (CDF)** on ”Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”
 - ***2024.06:*** Extremely honoured to be awarded the **A\*STAR National Science Scholarship PhD!**
@@ -53,7 +53,7 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
-- ***2025.07:*** ”"Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation”, NVIDIA Academic Grant Program
+- ***2025.07:*** ”Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation”, NVIDIA Academic Grant Program
 - ***2025.03:*** ”Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”, 2024 A*STAR Career
 Development Fund (CDF)
 - ***2024.06:*** A*STAR National Science Scholarship **(NSS-PhD, 5-yr funding for Ph.D. study)**, Singapore
@@ -71,7 +71,7 @@ Development Fund (CDF)
 
   *Aug 2025 – Present*
 
-  Advisor: [Prof. Bernadette Bucher](https://bucherb.github.io/)
+  Advisor: [Prof. Bernadette Bucher]
   </div>
   <div class='paper-box-image'>
     <div>
