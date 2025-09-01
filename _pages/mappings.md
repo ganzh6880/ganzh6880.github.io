@@ -9,3 +9,6 @@
 
 <!-- UMich -->
 [Prof. Bernadette Bucher]: https://bucherb.github.io/
+
+<!-- I2R, A*STAR -->
+[Dr. Michael Chuah]: https://www.linkedin.com/in/michaelchuah/?originalSubdomain=sg
