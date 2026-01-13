@@ -21,7 +21,7 @@ redirect_from:
 
 # 👋🏼 Hi there, I am Zhen Hao!
 
-I am a first-year Robotics PhD student @ Robotics Department, University of Michigan, advised by [Prof. Bernadette Bucher]. My research interests lies in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD!
+I am a first-year Robotics PhD student @ Robotics Department, University of Michigan, advised by [Prof. Bernadette Bucher] and part of the amazing [Mapping and Motion Lab](https://sites.google.com/umich.edu/mandmlab/home?authuser=0)! My research interests lies in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD!
 
 Previously, I am a Robotics Research Engineer @ Institute for Infocomm Research (I2R) and a member of Embodied Intelligence Task Force in A\*STAR. I have spent great time working with [Dr. Michael Chuah] on advancing legged robot capabilities and pushing boundaries in Physical Intelligence. I have earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore. My final year thesis has been supervised by [Prof. Xie Lihua] on Vision-based Robot Navigation via DRL.
 
