@@ -31,6 +31,7 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 
 
 # 🔥 News
+- ***2026.09:*** Released [PhyGS](https://m-and-m-lab.github.io/PhyGS/), a physically grounded scene-generation framework, and [ForageBench](https://m-and-m-lab.github.io/ForageBench/), a benchmark for interactive object search.
 - ***2026.05:*** Excited to join [NASA Jet Propulsion Laboratory](https://www.jpl.nasa.gov) as a Summer Robotics Intern 2026, working on problems related to embodied AI, robot task learning, and autonomy 🚀
 - ***2025.09:*** Featured in [A\*STAR Graduate Academy’s new series](https://www.linkedin.com/posts/agasingapore_astarforsg-futurescientists-stemcareers-ugcPost-7366723554660319232-oy1s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg), reflecting on my research path and experience as part of the A*STAR family. Hopefully it bring inspiration the next-generation roboticsts! Big shout out to my mentor, Michael!
 - ***2025.07:*** Proud to share the team has been selected for [**NVIDIA Academic Grant Program**](https://www.linkedin.com/posts/fanshi-robot_we-are-honored-to-receive-the-%F0%9D%90%8D%F0%9D%90%95%F0%9D%90%88%F0%9D%90%83-activity-7355431811486732288-VQ3f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg) on "Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation", lead by [Prof. Shi Fan](https://fanshi14.github.io/me/) (NUS), [Dr. Michael Chuah] (A*STAR)
@@ -40,19 +41,47 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 
 # 📝 Publications 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box publication-entry'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">CVPR 2026 Workshop</div>
+      <img src='images/phygs-teaser.jpg' alt="PhyGS generated scenes and Spot robot simulation-to-real deployment" width="1200" height="417" loading="lazy">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+### [PhyGS: Physically-Grounded Controllable Scene Generation](https://m-and-m-lab.github.io/PhyGS/)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong> <span class="author-note">second author</span>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+*CVPR Workshop on Multi-Agent Embodied Intelligent Systems, 2026*
+
+[Project](https://m-and-m-lab.github.io/PhyGS/) · [Paper](https://m-and-m-lab.github.io/PhyGS/assets/papers/phygs.pdf) · [Code](https://github.com/m-and-m-lab/PhyGS)
+
+PhyGS generates controllable, photorealistic, and physically interactive building-scale scenes in IsaacSim, with a hardware abstraction for sim-to-real deployment on Boston Dynamics Spot.
+  </div>
 </div>
-</div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
+<div class='paper-box publication-entry'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">2026</div>
+      <img src='images/foragebench-teaser.jpg' alt="ForageBench interactive object search task with navigation and manipulation" width="1200" height="782" loading="lazy">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+
+### [ForageBench: A Photorealistic, Physically Grounded Benchmark for Interactive Object Search](https://m-and-m-lab.github.io/ForageBench/)
+
+Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong> <span class="author-note">second author</span>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
+
+*2026*
+
+[Project](https://m-and-m-lab.github.io/ForageBench/) · [Paper](https://m-and-m-lab.github.io/ForageBench/assets/papers/foragebench.pdf) · [Code](https://github.com/m-and-m-lab/ForageBench)
+
+ForageBench evaluates interactive object search across 25 house-scale scenes and 100 episodes, combining long-horizon navigation with fine-grained physical interaction.
+  </div>
+</div>
 
 # 🎖 Honors and Awards
 - ***2025.07:*** ”Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation”, NVIDIA Academic Grant Program

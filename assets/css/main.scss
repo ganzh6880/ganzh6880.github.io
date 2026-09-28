@@ -88,6 +88,59 @@
 
 }
 
+.publication-entry {
+    align-items: flex-start;
+
+    .paper-box-image {
+        width: 100%;
+
+        > div {
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: none;
+            height: auto;
+            box-shadow: none;
+        }
+    }
+
+    .paper-box-text {
+        width: 100%;
+        padding-top: 1.25em;
+    }
+
+    @include breakpoint($medium) {
+        .paper-box-image,
+        .paper-box-text {
+            max-width: 100%;
+        }
+
+        .paper-box-text {
+            padding-left: 0;
+        }
+    }
+}
+
+.author-self {
+    color: hsl(220, 100%, 31%);
+}
+
+.author-note {
+    display: inline-block;
+    margin-left: .2em;
+    padding: .12em .5em;
+    border-radius: 999px;
+    color: hsl(220, 100%, 27%);
+    background: hsl(220, 80%, 94%);
+    font-size: .72em;
+    font-weight: 700;
+    letter-spacing: .02em;
+    vertical-align: .12em;
+}
+
 // paper-box image right
 // and align image right!!!
 .paper-box-right {
