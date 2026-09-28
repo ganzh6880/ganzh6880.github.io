@@ -52,7 +52,7 @@ Feel free to reach out via email if you would like to connect/collaboration/disc
 
 ### [PhyGS: Physically-Grounded Controllable Scene Generation](https://m-and-m-lab.github.io/PhyGS/)
 
-Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong> <span class="author-note">second author</span>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
+Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
 
 *CVPR Workshop on Multi-Agent Embodied Intelligent Systems, 2026*
 
@@ -73,7 +73,7 @@ PhyGS generates controllable, photorealistic, and physically interactive buildin
 
 ### [ForageBench: A Photorealistic, Physically Grounded Benchmark for Interactive Object Search](https://m-and-m-lab.github.io/ForageBench/)
 
-Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong> <span class="author-note">second author</span>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
+Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
 
 *2026*
 
