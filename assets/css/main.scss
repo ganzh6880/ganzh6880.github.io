@@ -93,6 +93,7 @@
 
     .paper-box-image {
         width: 100%;
+        order: 1;
 
         > div {
             width: 100%;
@@ -101,7 +102,7 @@
         img {
             display: block;
             width: 100%;
-            max-width: none;
+            max-width: 100%;
             height: auto;
             box-shadow: none;
         }
@@ -110,16 +111,25 @@
     .paper-box-text {
         width: 100%;
         padding-top: 1.25em;
+        order: 2;
     }
 
     @include breakpoint($medium) {
-        .paper-box-image,
-        .paper-box-text {
-            max-width: 100%;
+        align-items: center;
+
+        .paper-box-image {
+            flex: 0 0 31%;
+            min-width: 0;
+            max-width: 31%;
         }
 
         .paper-box-text {
-            padding-left: 0;
+            flex: 1 1 0;
+            min-width: 0;
+            width: auto;
+            max-width: none;
+            padding-top: 0;
+            padding-left: 2em;
         }
     }
 }
