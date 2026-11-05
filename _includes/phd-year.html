@@ -1,0 +1,16 @@
+{%- comment -%}
+  Outputs "first" / "second" / ... based on author.phd_start (year N starts on each anniversary).
+  Computed at build time, then refreshed in the visitor's browser by the script in _includes/scripts.html,
+  so it stays correct even if the site isn't rebuilt after an anniversary.
+{%- endcomment -%}
+{%- assign start = site.author.phd_start -%}
+{%- assign start_y = start | date: "%Y" | plus: 0 -%}
+{%- assign start_md = start | date: "%m%d" | plus: 0 -%}
+{%- assign now_y = site.time | date: "%Y" | plus: 0 -%}
+{%- assign now_md = site.time | date: "%m%d" | plus: 0 -%}
+{%- assign phd_year = now_y | minus: start_y -%}
+{%- if now_md >= start_md -%}{%- assign phd_year = phd_year | plus: 1 -%}{%- endif -%}
+{%- if phd_year < 1 -%}{%- assign phd_year = 1 -%}{%- endif -%}
+{%- assign ordinals = "first,second,third,fourth,fifth,sixth,seventh,eighth" | split: "," -%}
+{%- assign idx = phd_year | minus: 1 -%}
+<span class="phd-year" data-start="{{ start | date: '%Y-%m-%d' }}">{{ ordinals[idx] | default: phd_year }}</span>

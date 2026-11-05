@@ -1,0 +1,37 @@
+{% comment %}
+  Renders _data/publications.yml. Teasers and BibTeX are filled in by assets/js/publications.js.
+{% endcomment %}
+{% assign self_html = '<strong class="author-self">' | append: site.seo_name | append: '</strong>' %}
+<div class="publications" data-image-proxy="{{ site.teaser_image_proxy | escape }}">
+{% for pub in site.data.publications %}
+{% assign main_link = pub.project | default: pub.paper | default: pub.arxiv %}
+<div class="paper-box publication-entry"{% if pub.project %} data-project="{{ pub.project }}"{% endif %}{% if pub.teaser %} data-teaser="{{ pub.teaser }}"{% endif %}>
+  {% if pub.project or pub.teaser %}
+  <div class="paper-box-image">
+    <div>
+      {% if pub.badge %}<div class="badge">{{ pub.badge }}</div>{% endif %}
+      <a class="paper-teaser is-loading" href="{{ main_link }}" aria-label="{{ pub.title | escape }}"></a>
+    </div>
+  </div>
+  {% endif %}
+  <div class="paper-box-text">
+    <h3 class="paper-title">{% if main_link %}<a href="{{ main_link }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+    <p class="paper-authors">{{ pub.authors | replace: site.seo_name, self_html }}</p>
+    {% if pub.venue %}<p class="paper-venue"><em>{{ pub.venue }}</em></p>{% endif %}
+    <p class="paper-links">
+      {% if pub.project %}<a href="{{ pub.project }}">Project</a>{% endif %}
+      {% if pub.paper %}<a href="{{ pub.paper }}">Paper</a>{% endif %}
+      {% if pub.arxiv %}<a href="{{ pub.arxiv }}">arXiv</a>{% endif %}
+      {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+      {% if pub.video %}<a href="{{ pub.video }}">Video</a>{% endif %}
+      <button type="button" class="paper-bib-toggle" aria-expanded="false"{% unless pub.bibtex %} hidden{% endunless %}>BibTeX</button>
+    </p>
+    <div class="paper-bib" hidden>
+      <button type="button" class="paper-bib-copy">Copy</button>
+      <pre>{{ pub.bibtex | strip | escape }}</pre>
+    </div>
+    {% if pub.summary %}<p class="paper-summary">{{ pub.summary }}</p>{% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>

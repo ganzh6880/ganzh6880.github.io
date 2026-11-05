@@ -8,7 +8,8 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{{ site.title }} - Homepage</title>
+{% assign seo_title = site.seo_name | append: " · " | append: site.seo_tagline %}
+<title>{{ seo_title }}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
@@ -29,18 +30,49 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
+{% if seo_description %}
+  <meta name="description" content="{{ seo_description }}">
+{% endif %}
+
+<meta property="og:type" content="profile">
 <meta property="og:locale" content="en">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site.seo_name }}">
+<meta property="og:title" content="{{ seo_title }}">
+{% if site.author.avatar %}
+  <meta property="og:image" content="{{ site.author.avatar | absolute_url }}">
+  <meta property="og:image:alt" content="Portrait of {{ site.seo_name }}">
+{% endif %}
+<meta name="twitter:card" content="summary">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% if seo_description %}
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
+
+{% assign author = site.author %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.seo_name | jsonify }},
+  "alternateName": [{{ author.name | jsonify }}{% if author.chinesename %}, {{ author.chinesename | jsonify }}{% endif %}],
+  "url": {{ "/" | absolute_url | jsonify }},
+  {% if author.avatar %}"image": {{ author.avatar | absolute_url | jsonify }},{% endif %}
+  "jobTitle": "Robotics PhD Student",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Michigan" },
+  "memberOf": { "@type": "Organization", "name": "Mapping & Motion Lab", "url": "https://m-and-m-lab.github.io/" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Nanyang Technological University" },
+  "sameAs": [
+    {{ author.googlescholar | jsonify }},
+    {{ "https://github.com/" | append: author.github | jsonify }},
+    {{ "https://www.linkedin.com/in/" | append: author.linkedin | jsonify }}
+  ]
+}
+</script>
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">

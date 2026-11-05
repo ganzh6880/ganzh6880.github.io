@@ -7,9 +7,16 @@
 
 # Site Settings
 title                    : "Gan Zhen Hao"
-description              : ""
+description              : "" # shown in the sidebar when set; the search/link-preview description lives in _pages/about.md
+seo_name                 : "Zhen Hao Gan" # name order used on papers; used for <title>, link previews, and search metadata
+seo_tagline              : "Robotics PhD Student, University of Michigan"
+url                      : "https://ganzh6880.github.io"
 repository               : "ganzh6880/ganzh6880.github.io"
-google_scholar_stats_use_cdn : true
+
+# Publication teasers are pulled live from each project page (see _data/publications.yml).
+# Teaser images are resized through this free image proxy (wsrv.nl) so an 8 MB figure becomes a ~50 KB thumbnail;
+# if the proxy is down the original file is used. Set to "" to always load the original files.
+teaser_image_proxy       : "https://wsrv.nl/?url={url}&w={width}&output=webp"
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -25,6 +32,7 @@ author:
   name             : "Gan Zhen Hao"
   chinesename      : "颜镇浩"
   bio              : "Robotics PhD Student @ UMich"
+  phd_start        : "2025-09-01" # first day of PhD year 1; the "first-year"/"second-year" wording in the bio counts from this
   location         : "Ann Arbor, Michigan, USA"
   email            : "ganzh@umich.edu"
   github           : "ganzh6880"
@@ -138,7 +146,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Detroit # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

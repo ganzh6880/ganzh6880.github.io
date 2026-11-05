@@ -1,4 +1,21 @@
 <script src="assets/js/main.min.js"></script>
+<script src="{{ '/assets/js/publications.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 
-{% include analytics.html %}
-{% include fetch_google_scholar_stats.html %}
+<script>
+  // Keep "first-year"/"second-year"/... current even when the site hasn't been rebuilt since the last anniversary.
+  (function () {
+    var words = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth'];
+    Array.prototype.forEach.call(document.querySelectorAll('.phd-year[data-start]'), function (el) {
+      var p = el.getAttribute('data-start').split('-');
+      var start = new Date(+p[0], +p[1] - 1, +p[2]);
+      var now = new Date();
+      var year = now.getFullYear() - start.getFullYear() + 1;
+      var beforeAnniversary = now.getMonth() < start.getMonth() ||
+        (now.getMonth() === start.getMonth() && now.getDate() < start.getDate());
+      if (beforeAnniversary) year -= 1;
+      if (year >= 1) el.textContent = words[year - 1] || year + 'th';
+    });
+  })();
+</script>
+
+{% if site.google_analytics_id %}{% include analytics.html %}{% endif %}

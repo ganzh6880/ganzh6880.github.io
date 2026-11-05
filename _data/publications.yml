@@ -1,0 +1,32 @@
+# Publications, newest first. Rendered by _includes/publications.html.
+#
+# Fields
+#   title, authors, venue, summary   text shown on the page ("Zhen Hao Gan" in authors is bolded automatically)
+#   badge                            short label on the thumbnail (optional)
+#   project, paper, arxiv, code, video   links (all optional)
+#
+# Pulled live from the `project` page when the homepage is viewed (nothing is copied into this repo):
+#   teaser   the first image or video on the project page whose file name contains "teaser"
+#            (e.g. assets/images/teaser.png or assets/videos/teaser.mp4); if none is named that way,
+#            the first image or video on the page. Set `teaser:` to a URL here to override.
+#   bibtex   the BibTeX block on the project page (<pre id="bib">). Set `bibtex: |` here to override.
+#
+# An entry without `project` or `teaser` is shown as text only.
+
+- title: "PhyGS: Physically-Grounded Controllable Scene Generation"
+  authors: "Aparajito Saha, Zhen Hao Gan, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher"
+  venue: "CVPR Workshop on Multi-Agent Embodied Intelligent Systems, 2026"
+  badge: "CVPR 2026 Workshop"
+  project: "https://m-and-m-lab.github.io/PhyGS/"
+  paper: "https://m-and-m-lab.github.io/PhyGS/assets/papers/phygs.pdf"
+  code: "https://github.com/m-and-m-lab/PhyGS"
+  summary: "PhyGS generates controllable, photorealistic, and physically interactive building-scale scenes in IsaacSim, with a hardware abstraction for sim-to-real deployment on Boston Dynamics Spot."
+
+- title: "ForageBench: A Photorealistic, Physically Grounded Benchmark for Interactive Object Search"
+  authors: "Aparajito Saha, Zhen Hao Gan, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher"
+  venue: "2026"
+  badge: "2026"
+  project: "https://m-and-m-lab.github.io/ForageBench/"
+  paper: "https://m-and-m-lab.github.io/ForageBench/assets/papers/foragebench.pdf"
+  code: "https://github.com/m-and-m-lab/ForageBench"
+  summary: "ForageBench evaluates interactive object search across 25 house-scale scenes and 100 episodes, combining long-horizon navigation with fine-grained physical interaction."

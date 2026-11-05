@@ -99,7 +99,8 @@
             width: 100%;
         }
 
-        img {
+        img,
+        video {
             display: block;
             width: 100%;
             max-width: 100%;
@@ -108,10 +109,86 @@
         }
     }
 
+    // Teaser slot, filled from the project page by assets/js/publications.js
+    .paper-teaser {
+        display: block;
+
+        &.is-loading {
+            aspect-ratio: 16 / 9;
+            background-color: #f2f3f3;
+        }
+    }
+
     .paper-box-text {
         width: 100%;
         padding-top: 1.25em;
         order: 2;
+    }
+
+    .paper-title {
+        margin-top: 0;
+    }
+
+    .paper-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    .paper-links > * + *::before {
+        content: "·";
+        padding: 0 0.45em;
+        color: $text-color;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .paper-bib-toggle {
+        padding: 0;
+        border: 0;
+        background: none;
+        font: inherit;
+        color: $link-color;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+
+    .paper-bib {
+        position: relative;
+        margin: -0.25em 0 1.3em;
+
+        pre {
+            margin: 0;
+            padding: 0.8em 1em;
+            overflow-x: auto;
+            font-size: 0.8em;
+            line-height: 1.45;
+            white-space: pre;
+            background: $code-background-color;
+            border: 1px solid $border-color;
+        }
+    }
+
+    .paper-bib-copy {
+        position: absolute;
+        top: 0.45em;
+        right: 0.45em;
+        padding: 0.15em 0.6em;
+        font: inherit;
+        font-size: 0.75em;
+        color: $text-color;
+        background: #fff;
+        border: 1px solid $border-color;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    [hidden] {
+        display: none !important;
     }
 
     @include breakpoint($medium) {
@@ -138,6 +215,43 @@
     color: inherit;
 }
 
+// Experience entries: organisation + dates on one line, role underneath, short highlights
+.cv-entry {
+    padding: 1.5em 0;
+    border-bottom: 1px #efefef solid;
+
+    > :first-child {
+        margin-top: 0;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 0 0 0.4em;
+    }
+
+    ul {
+        margin: 0.6em 0 0;
+    }
+
+    li {
+        margin-bottom: 0.3em;
+    }
+
+    .cv-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0 1em;
+    }
+
+    .cv-date {
+        white-space: nowrap;
+    }
+}
+
 // paper-box image right
 // and align image right!!!
 .paper-box-right {
@@ -155,9 +269,11 @@
         max-width: 40%;
         order: 2;
         img {
-            max-width: 400px;
+            width: 250px;
+            max-width: 100%;
+            height: auto;
+            padding: 10px;
             box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
         }
     }
     
@@ -169,9 +285,28 @@
         order: 1;
     }
 
+    // Phones: logo on top, text full width underneath
+    @include breakpoint(max-width $medium) {
+        .paper-box-image {
+            max-width: 100%;
+            order: 1;
+            margin-bottom: 1em;
+
+            img {
+                width: 170px;
+            }
+        }
+
+        .paper-box-text {
+            max-width: 100%;
+            padding-left: 0;
+            order: 2;
+        }
+    }
+
 }
 
-$scroll_offset : 2em;
+$scroll_offset : 80px; // sticky masthead is ~59px tall
 h1:before, .anchor:before { 
     content: ''; 
     display: block; 

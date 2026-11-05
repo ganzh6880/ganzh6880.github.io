@@ -1,19 +1,12 @@
 ---
 permalink: /
 title: ""
-excerpt: "About me"
+description: "Zhen Hao Gan is a Robotics PhD student at the University of Michigan in the Mapping & Motion Lab, advised by Prof. Bernadette Bucher, working on embodied navigation, interactive object search, and robot learning."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 {% include_relative mappings.md %}
 
@@ -21,79 +14,58 @@ redirect_from:
 
 # 👋🏼 Hi there, I am Zhen Hao!
 
-I am a first-year Robotics PhD student @ Robotics Department, University of Michigan, advised by [Prof. Bernadette Bucher] and part of the amazing [Mapping and Motion Lab](https://sites.google.com/umich.edu/mandmlab)! My research interests lies in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey will be fully-funded through the A\*STAR National Science Scholarship PhD!
+I am a {% include phd-year.html %}-year Robotics PhD student in the Robotics Department at the University of Michigan, advised by [Prof. Bernadette Bucher] and part of the amazing [Mapping & Motion Lab](https://m-and-m-lab.github.io/)! My research interests lie in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey is fully funded by the A\*STAR National Science Scholarship (PhD)!
 
-Previously, I am a Robotics Research Engineer @ Institute for Infocomm Research (I2R) and a member of Embodied Intelligence Task Force in A\*STAR. I have spent great time working with [Dr. Michael Chuah] on advancing legged robot capabilities and pushing boundaries in Physical Intelligence. I have earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore. My final year thesis has been supervised by [Prof. Xie Lihua] on Vision-based Robot Navigation via DRL.
+Previously, I was a Robotics Research Engineer at the Institute for Infocomm Research (I2R) and a member of the Embodied Intelligence Task Force at A\*STAR, where I had a great time working with [Dr. Michael Chuah] on advancing legged robot capabilities and pushing the boundaries of Physical Intelligence. I earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore, where my final-year thesis on vision-based robot navigation via DRL was supervised by [Prof. Xie Lihua].
 
-I envision mobile robots go anywhere anytime autonomously and intelligently with understanding of self and environment, leveraging the power of machine learning to enhance embodied skills acquisition and adaptation.
+I envision mobile robots that can go anywhere, anytime, autonomously and intelligently, with an understanding of themselves and their environment, leveraging the power of machine learning to enhance embodied skill acquisition and adaptation.
 
-Feel free to reach out via email if you would like to connect/collaboration/discuss!
+Feel free to reach out via email if you would like to connect, collaborate, or discuss research!
 
 
 # 🔥 News
 - ***2026.09:*** Released [PhyGS](https://m-and-m-lab.github.io/PhyGS/), a physically grounded scene-generation framework, and [ForageBench](https://m-and-m-lab.github.io/ForageBench/), a benchmark for interactive object search.
 - ***2026.05:*** Excited to join [NASA Jet Propulsion Laboratory](https://www.jpl.nasa.gov) as a Summer Robotics Intern 2026, working on problems related to embodied AI, robot task learning, and autonomy 🚀
-- ***2025.09:*** Featured in [A\*STAR Graduate Academy’s new series](https://www.linkedin.com/posts/agasingapore_astarforsg-futurescientists-stemcareers-ugcPost-7366723554660319232-oy1s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg), reflecting on my research path and experience as part of the A*STAR family. Hopefully it bring inspiration the next-generation roboticsts! Big shout out to my mentor, Michael!
-- ***2025.07:*** Proud to share the team has been selected for [**NVIDIA Academic Grant Program**](https://www.linkedin.com/posts/fanshi-robot_we-are-honored-to-receive-the-%F0%9D%90%8D%F0%9D%90%95%F0%9D%90%88%F0%9D%90%83-activity-7355431811486732288-VQ3f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg) on "Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation", lead by [Prof. Shi Fan](https://fanshi14.github.io/me/) (NUS), [Dr. Michael Chuah] (A*STAR)
-- ***2025.04:*** Excited to share that I will be starting my PhD journey this fall at the Robotics Department, UofM under Prof. Bernadette Bucher!
-- ***2025.03:*** Proud to announce the team has been awarded the **2024 A\*STAR Career Development Fund (CDF)** on ”Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”
+- ***2025.09:*** Featured in [A\*STAR Graduate Academy’s new series](https://www.linkedin.com/posts/agasingapore_astarforsg-futurescientists-stemcareers-ugcPost-7366723554660319232-oy1s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg), reflecting on my research path and experience as part of the A*STAR family. Hopefully it inspires the next generation of roboticists! Big shout-out to my mentor, Michael!
+- ***2025.07:*** Proud to share the team has been selected for [**NVIDIA Academic Grant Program**](https://www.linkedin.com/posts/fanshi-robot_we-are-honored-to-receive-the-%F0%9D%90%8D%F0%9D%90%95%F0%9D%90%88%F0%9D%90%83-activity-7355431811486732288-VQ3f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg) on "Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation", led by [Prof. Shi Fan](https://fanshi14.github.io/me/) (NUS), [Dr. Michael Chuah] (A*STAR)
+- ***2025.04:*** Excited to share that I will be starting my PhD journey this fall in the Robotics Department at UMich under Prof. Bernadette Bucher!
+- ***2025.03:*** Proud to announce the team has been awarded the **2024 A\*STAR Career Development Fund (CDF)** on “Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”
 - ***2024.06:*** Extremely honoured to be awarded the **A\*STAR National Science Scholarship PhD!**
 
-# 📝 Publications 
+# 📝 Publications
 
-<div class='paper-box publication-entry'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">CVPR 2026 Workshop</div>
-      <img src='images/phygs-teaser.jpg' alt="PhyGS generated scenes and Spot robot simulation-to-real deployment" width="1200" height="417" loading="lazy">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
+{% include publications.html %}
 
-### [PhyGS: Physically-Grounded Controllable Scene Generation](https://m-and-m-lab.github.io/PhyGS/)
+# 💼 Experience
 
-Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
+<div class='cv-entry' markdown="1">
+<p class='cv-head'><span><strong>NASA Jet Propulsion Laboratory (JPL)</strong>, <em>Pasadena, California, USA</em></span> <em class='cv-date'>Summer 2026</em></p>
 
-*CVPR Workshop on Multi-Agent Embodied Intelligent Systems, 2026*
+Summer Robotics Intern, mentored by Erica Tevere and Erik Kramer
 
-[Project](https://m-and-m-lab.github.io/PhyGS/) · [Paper](https://m-and-m-lab.github.io/PhyGS/assets/papers/phygs.pdf) · [Code](https://github.com/m-and-m-lab/PhyGS)
-
-PhyGS generates controllable, photorealistic, and physically interactive building-scale scenes in IsaacSim, with a hardware abstraction for sim-to-real deployment on Boston Dynamics Spot.
-  </div>
+- Interaction-aware navigation: using vision and VLMs to identify movable obstacles and regions that may hide traversable space, then verifying movability through physical interaction and proprioceptive feedback to update local navigation maps.
 </div>
 
-<div class='paper-box publication-entry'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">2026</div>
-      <img src='images/foragebench-teaser.jpg' alt="ForageBench interactive object search task with navigation and manipulation" width="1200" height="782" loading="lazy">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
+<div class='cv-entry' markdown="1">
+<p class='cv-head'><span><strong>Institute for Infocomm Research (I2R), A*STAR</strong>, <em>Singapore</em></span> <em class='cv-date'>Sep 2021 – 2025</em></p>
 
-### [ForageBench: A Photorealistic, Physically Grounded Benchmark for Interactive Object Search](https://m-and-m-lab.github.io/ForageBench/)
+Robotics Research Engineer, Embodied Intelligence Task Force, supervised by [Dr. Michael Chuah] and Dr. Albertus Hendrawan Adiwahono
 
-Aparajito Saha, <strong class="author-self">Zhen Hao Gan</strong>, Jinjia Guo, Jacob Skwirsk, Jeremy Acheampong, Anton Arapin, Chahyon Ku, Yue Hu, Nima Fazeli, Bernadette Bucher
-
-*2026*
-
-[Project](https://m-and-m-lab.github.io/ForageBench/) · [Paper](https://m-and-m-lab.github.io/ForageBench/assets/papers/foragebench.pdf) · [Code](https://github.com/m-and-m-lab/ForageBench)
-
-ForageBench evaluates interactive object search across 25 house-scale scenes and 100 episodes, combining long-horizon navigation with fine-grained physical interaction.
-  </div>
+- **Embodiment-aware transformers for legged robots:** zero-shot, fault-tolerant locomotion policies that generalize across quadrupeds and humanoids.
+- **Safe locomotion on unstructured terrain:** real-time dynamic probing to estimate terrain collapsibility, and semantic 3D terrain reconstruction for traversability.
+- **Project Rover-X:** GPS goal-driven exploration and traversability analysis for legged robots; delivered a fully autonomous patrolling and people-following demo to HTX and SCDF for HazMat operations, featured in The Straits Times.
 </div>
 
 # 🎖 Honors and Awards
-- ***2025.07:*** ”Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation”, NVIDIA Academic Grant Program
-- ***2025.03:*** ”Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”, 2024 A*STAR Career
-Development Fund (CDF)
+- ***2025.07:*** “Adaptive Fault-Tolerant Safe Locomotion with Differentiable Simulation”, NVIDIA Academic Grant Program
+- ***2025.03:*** “Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”, 2024 A*STAR Career Development Fund (CDF)
 - ***2024.06:*** A*STAR National Science Scholarship **(NSS-PhD, 5-yr funding for Ph.D. study)**, Singapore
-- ***2019.08:*** Dean List’s Academic Year 2018/2019 (Top 5% of the Cohort)
+- ***2019.08:*** Dean’s List, Academic Year 2018/2019 (Top 5% of the Cohort)
 - ***2019.06:*** NTU EEE Partial Financial Award for GEM Explorer
-- ***2018.08:*** Dean List’s Academic Year 2017/2018 (Top 5% of the Cohort)
+- ***2018.08:*** Dean’s List, Academic Year 2017/2018 (Top 5% of the Cohort)
 - ***2017.07:*** GCE A-Level High Achiever Award (4A*)
 
-# 📖 Educations
+# 📖 Education
 <div class='paper-box-right'>
   <div class='paper-box-text' markdown="1">
   **University of Michigan**, *Ann Arbor, Michigan, USA*
@@ -106,7 +78,7 @@ Development Fund (CDF)
   </div>
   <div class='paper-box-image'>
     <div>
-      <img src='images/umich.png' alt="sym" width="250" style="padding: 10px">
+      <img src='images/umich.png' alt="University of Michigan Robotics logo" width="498" height="101" loading="lazy">
     </div>
   </div>
 </div>
@@ -123,7 +95,7 @@ Development Fund (CDF)
   </div>
   <div class='paper-box-image'>
     <div>
-      <img src='images/ntu.png' alt="sym" width="250" style="padding: 10px">
+      <img src='images/ntu.png' alt="Nanyang Technological University logo" width="1440" height="600" loading="lazy">
     </div>
   </div>
 </div>
@@ -132,13 +104,13 @@ Development Fund (CDF)
   <div class='paper-box-text' markdown="1">
   **Technical University of Munich (TUM)**, *Munich, Germany*
 
-  Student Leader, Winter Semester Exchange (Fakultat fur Elektrotechnik und Informationstechnik)
+  Student Leader, Winter Semester Exchange (Fakultät für Elektrotechnik und Informationstechnik)
 
   *Oct 2019 – Mar 2020*
   </div>
   <div class='paper-box-image'>
     <div>
-      <img src='images/tum.png' alt="sym" width="250" style="padding: 10px">
+      <img src='images/tum.png' alt="Technical University of Munich logo" width="387" height="130" loading="lazy">
     </div>
   </div>
 </div>
