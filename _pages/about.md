@@ -42,15 +42,20 @@ Feel free to reach out via email to connect, collaborate, or chat about robots!
 
 # 💼 Experience
 
-<div class='cv-entry' markdown="1">
+<div class='cv-entry cv-entry--logo'>
+<div class='cv-logo'><img src='images/jpl.webp' alt="NASA Jet Propulsion Laboratory logo" loading="lazy"></div>
+<div class='cv-body' markdown="1">
 <p class='cv-head'><span><strong>NASA Jet Propulsion Laboratory (JPL)</strong>, <em>Pasadena, California, USA</em></span> <em class='cv-date'>Summer 2026</em></p>
 
 Summer Robotics Intern, mentored by Erica Tevere and Erik Kramer
 
 - Interaction-aware navigation: using vision and VLMs to identify movable obstacles and regions that may hide traversable space, then verifying movability through physical interaction and proprioceptive feedback to update local navigation maps.
 </div>
+</div>
 
-<div class='cv-entry' markdown="1">
+<div class='cv-entry cv-entry--logo'>
+<div class='cv-logo'><img src='images/astar.webp' alt="A*STAR logo" loading="lazy"></div>
+<div class='cv-body' markdown="1">
 <p class='cv-head'><span><strong>Institute for Infocomm Research (I2R), A*STAR</strong>, <em>Singapore</em></span> <em class='cv-date'>Sep 2021 – 2025</em></p>
 
 Robotics Research Engineer, Embodied Intelligence Task Force, supervised by [Dr. Michael Chuah] and Dr. Albertus Hendrawan Adiwahono
@@ -58,6 +63,7 @@ Robotics Research Engineer, Embodied Intelligence Task Force, supervised by [Dr.
 - **Embodiment-aware transformers for legged robots:** zero-shot, fault-tolerant locomotion policies that generalize across quadrupeds and humanoids.
 - **Safe locomotion on unstructured terrain:** real-time dynamic probing to estimate terrain collapsibility, and semantic 3D terrain reconstruction for traversability.
 - **Project Rover-X:** GPS goal-driven exploration and traversability analysis for legged robots; delivered a fully autonomous patrolling and people-following demo to HTX and SCDF for HazMat operations, featured in The Straits Times.
+</div>
 </div>
 
 # 🎖 Honors and Awards
