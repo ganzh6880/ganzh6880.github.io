@@ -18,4 +18,28 @@
   })();
 </script>
 
+<script>
+  // News: CSS hides the older items; add the button that shows them.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('.news-list'), function (box) {
+      var items = box.querySelectorAll(':scope > ul > li');
+      var hiddenCount = Array.prototype.filter.call(items, function (li) {
+        return getComputedStyle(li).display === 'none';
+      }).length;
+      if (!hiddenCount) return;
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'news-toggle';
+      var update = function () {
+        var open = box.classList.contains('is-expanded');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.textContent = open ? 'Show less' : 'Show older news (' + hiddenCount + ')';
+      };
+      btn.addEventListener('click', function () { box.classList.toggle('is-expanded'); update(); });
+      update();
+      box.appendChild(btn);
+    });
+  })();
+</script>
+
 {% if site.google_analytics_id %}{% include analytics.html %}{% endif %}

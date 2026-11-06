@@ -28,7 +28,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  avatar           : "images/profile_pic2.jpg"
+  avatar           : "images/profile_pic2.jpg"          # full size: link previews and search results
+  avatar_small     : "images/profile_pic2-400.jpg"      # sidebar photo (displayed at most 175px wide)
   name             : "Gan Zhen Hao"
   chinesename      : "颜镇浩"
   bio              : "Robotics PhD Student @ UMich"
@@ -76,6 +77,8 @@ include:
   - files
 exclude:
   - docs
+  - _pages/mappings.md # pulled into about.md with include_relative; not a page of its own
+  - run_server.sh
   - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"

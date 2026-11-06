@@ -14,16 +14,19 @@ redirect_from:
 
 # 👋🏼 Hi there, I am Zhen Hao!
 
-I am a {% include phd-year.html %}-year Robotics PhD student in the Robotics Department at the University of Michigan, advised by [Prof. Bernadette Bucher] and part of the amazing [Mapping & Motion Lab](https://m-and-m-lab.github.io/)! My research interests lie in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, Robot Learning & Foundation Models**. My PhD journey is fully funded by the A\*STAR National Science Scholarship (PhD)!
+<div class='bio' markdown="1">
+I am a {% include phd-year.html %}-year Robotics PhD student at the University of Michigan, advised by [Prof. Bernadette Bucher] and part of the amazing [Mapping & Motion Lab](https://m-and-m-lab.github.io/)! My PhD journey is fully funded by the A\*STAR National Science Scholarship.
 
-Previously, I was a Robotics Research Engineer at the Institute for Infocomm Research (I2R) and a member of the Embodied Intelligence Task Force at A\*STAR, where I had a great time working with [Dr. Michael Chuah] on advancing legged robot capabilities and pushing the boundaries of Physical Intelligence. I earned a B.Eng in Electrical and Electronic Engineering with honors (Highest Distinction) from Nanyang Technological University (NTU), Singapore, where my final-year thesis on vision-based robot navigation via DRL was supervised by [Prof. Xie Lihua].
+I envision mobile robots that can go anywhere, anytime, autonomously and intelligently, understanding themselves and their environment and using machine learning to keep acquiring and adapting embodied skills. My research interests lie in **Embodied Navigation, Interactive Object Search, Physical Intelligence, Skills Acquisition and Adaptation, 3D Path and Motion Planning, and Robot Learning & Foundation Models**.
 
-I envision mobile robots that can go anywhere, anytime, autonomously and intelligently, with an understanding of themselves and their environment, leveraging the power of machine learning to enhance embodied skill acquisition and adaptation.
+Before my PhD, I was a Robotics Research Engineer at A\*STAR, where I had a great time working with [Dr. Michael Chuah] on legged robots and Physical Intelligence.
 
-Feel free to reach out via email if you would like to connect, collaborate, or discuss research!
-
+Feel free to reach out via email to connect, collaborate, or chat about robots!
+</div>
 
 # 🔥 News
+<!-- Newest first. Only the latest few show; older items collapse behind "Show older news" ($news-visible in assets/css/main.scss). -->
+<div class='news-list' markdown="1">
 - ***2026.09:*** Released [PhyGS](https://m-and-m-lab.github.io/PhyGS/), a physically grounded scene-generation framework, and [ForageBench](https://m-and-m-lab.github.io/ForageBench/), a benchmark for interactive object search.
 - ***2026.05:*** Excited to join [NASA Jet Propulsion Laboratory](https://www.jpl.nasa.gov) as a Summer Robotics Intern 2026, working on problems related to embodied AI, robot task learning, and autonomy 🚀
 - ***2025.09:*** Featured in [A\*STAR Graduate Academy’s new series](https://www.linkedin.com/posts/agasingapore_astarforsg-futurescientists-stemcareers-ugcPost-7366723554660319232-oy1s/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJ36w8B9DRkAIYDopFg8YmJ_MHyHbXk_Gg), reflecting on my research path and experience as part of the A*STAR family. Hopefully it inspires the next generation of roboticists! Big shout-out to my mentor, Michael!
@@ -31,6 +34,7 @@ Feel free to reach out via email if you would like to connect, collaborate, or d
 - ***2025.04:*** Excited to share that I will be starting my PhD journey this fall in the Robotics Department at UMich under Prof. Bernadette Bucher!
 - ***2025.03:*** Proud to announce the team has been awarded the **2024 A\*STAR Career Development Fund (CDF)** on “Towards Physical Intelligence: Embodiment-Aware Transformer Model for Legged Robots”
 - ***2024.06:*** Extremely honoured to be awarded the **A\*STAR National Science Scholarship PhD!**
+</div>
 
 # 📝 Publications
 
@@ -66,53 +70,36 @@ Robotics Research Engineer, Embodied Intelligence Task Force, supervised by [Dr.
 - ***2017.07:*** GCE A-Level High Achiever Award (4A*)
 
 # 📖 Education
-<div class='paper-box-right'>
-  <div class='paper-box-text' markdown="1">
-  **University of Michigan**, *Ann Arbor, Michigan, USA*
 
-  PhD Student, Michigan Robotics Department
+<div class='cv-entry cv-entry--logo'>
+<div class='cv-logo'><img src='images/umich.png' alt="University of Michigan Robotics logo" loading="lazy"></div>
+<div class='cv-body' markdown="1">
+<p class='cv-head'><span><strong>University of Michigan</strong>, <em>Ann Arbor, Michigan, USA</em></span> <em class='cv-date'>Aug 2025 – Present</em></p>
 
-  *Aug 2025 – Present*
+PhD Student, Michigan Robotics Department
 
-  Advisor: [Prof. Bernadette Bucher]
-  </div>
-  <div class='paper-box-image'>
-    <div>
-      <img src='images/umich.png' alt="University of Michigan Robotics logo" width="498" height="101" loading="lazy">
-    </div>
-  </div>
+Advisor: [Prof. Bernadette Bucher]
+</div>
 </div>
 
-<div class='paper-box-right'>
-  <div class='paper-box-text' markdown="1">
-  **Nanyang Technological University (NTU)**, *Singapore*
+<div class='cv-entry cv-entry--logo'>
+<div class='cv-logo'><img src='images/ntu.webp' alt="Nanyang Technological University logo" loading="lazy"></div>
+<div class='cv-body' markdown="1">
+<p class='cv-head'><span><strong>Nanyang Technological University (NTU)</strong>, <em>Singapore</em></span> <em class='cv-date'>Aug 2017 – Jun 2021</em></p>
 
-  B.Eng (Electrical and Electronic Engineering), Honours (Highest Distinction)
+B.Eng (Electrical and Electronic Engineering), Honours (Highest Distinction)
 
-  *Aug 2017 – Jun 2021*
-
-  Advisor: [Prof. Xie Lihua]
-  </div>
-  <div class='paper-box-image'>
-    <div>
-      <img src='images/ntu.png' alt="Nanyang Technological University logo" width="1440" height="600" loading="lazy">
-    </div>
-  </div>
+Thesis: Vision-based Robot Navigation via DRL · Advisor: [Prof. Xie Lihua]
+</div>
 </div>
 
-<div class='paper-box-right'>
-  <div class='paper-box-text' markdown="1">
-  **Technical University of Munich (TUM)**, *Munich, Germany*
+<div class='cv-entry cv-entry--logo'>
+<div class='cv-logo'><img src='images/tum.png' alt="Technical University of Munich logo" loading="lazy"></div>
+<div class='cv-body' markdown="1">
+<p class='cv-head'><span><strong>Technical University of Munich (TUM)</strong>, <em>Munich, Germany</em></span> <em class='cv-date'>Oct 2019 – Mar 2020</em></p>
 
-  Student Leader, Winter Semester Exchange (Fakultät für Elektrotechnik und Informationstechnik)
-
-  *Oct 2019 – Mar 2020*
-  </div>
-  <div class='paper-box-image'>
-    <div>
-      <img src='images/tum.png' alt="Technical University of Munich logo" width="387" height="130" loading="lazy">
-    </div>
-  </div>
+Student Leader, Winter Semester Exchange (Fakultät für Elektrotechnik und Informationstechnik)
+</div>
 </div>
 
 <!-- # 💬 Invited Talks

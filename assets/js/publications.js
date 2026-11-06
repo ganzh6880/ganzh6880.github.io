@@ -107,7 +107,7 @@
     img.loading = 'lazy';
     img.decoding = 'async';
     if (small) {
-      img.srcset = small + ' 720w, ' + resized(teaser.src, 1280) + ' 1280w';
+      img.srcset = resized(teaser.src, 480) + ' 480w, ' + small + ' 720w, ' + resized(teaser.src, 1280) + ' 1280w';
       img.sizes = '(min-width: 48em) 32vw, 100vw';
       img.src = small;
     } else {

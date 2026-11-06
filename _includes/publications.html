@@ -9,13 +9,13 @@
   {% if pub.project or pub.teaser %}
   <div class="paper-box-image">
     <div>
-      {% if pub.badge %}<div class="badge">{{ pub.badge }}</div>{% endif %}
       <a class="paper-teaser is-loading" href="{{ main_link }}" aria-label="{{ pub.title | escape }}"></a>
     </div>
   </div>
   {% endif %}
   <div class="paper-box-text">
-    <h3 class="paper-title">{% if main_link %}<a href="{{ main_link }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+    {% if pub.badge %}<span class="badge">{{ pub.badge }}</span>{% endif %}
+    <h2 class="paper-title">{% if main_link %}<a href="{{ main_link }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h2>
     <p class="paper-authors">{{ pub.authors | replace: site.seo_name, self_html }}</p>
     {% if pub.venue %}<p class="paper-venue"><em>{{ pub.venue }}</em></p>{% endif %}
     <p class="paper-links">

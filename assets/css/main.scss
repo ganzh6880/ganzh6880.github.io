@@ -127,6 +127,7 @@
 
     .paper-title {
         margin-top: 0;
+        font-size: $type-size-5; // h2 for heading order, same size as the old h3
     }
 
     .paper-links {
@@ -215,6 +216,11 @@
     color: inherit;
 }
 
+// Bio paragraphs wrap at ~80 characters per line so they're easier to read on wide screens
+.bio p {
+    max-width: 46em;
+}
+
 // Experience entries: organisation + dates on one line, role underneath, short highlights
 .cv-entry {
     padding: 1.5em 0;
@@ -252,58 +258,74 @@
     }
 }
 
-// paper-box image right
-// and align image right!!!
-.paper-box-right {
-    display: flex;
-    justify-content: space-between;
-    // align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
+// Education: same rows as Experience, plus a fixed-width logo column
+.cv-entry--logo {
+    display: grid;
+    grid-template-columns: 7.5em minmax(0, 1fr);
+    column-gap: 1.75em;
+    align-items: start;
 
-    .paper-box-image{
-        justify-content: right;
-        min-width: 20%;
-        max-width: 40%;
-        order: 2;
+    .cv-logo {
+        display: flex;
+        align-items: center;
+        height: 2.6em;
+
         img {
-            width: 250px;
-            max-width: 100%;
+            display: block;
+            width: auto;
             height: auto;
-            padding: 10px;
-            box-shadow: 3px 3px 6px #888;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
-    
-    .paper-box-text{
-        justify-content: left;
-        padding-left: 2em;
-        min-width: 20%;
-        max-width: 60%;
-        order: 1;
+
+    .cv-body > :last-child {
+        margin-bottom: 0;
     }
 
-    // Phones: logo on top, text full width underneath
-    @include breakpoint(max-width $medium) {
-        .paper-box-image {
-            max-width: 100%;
-            order: 1;
-            margin-bottom: 1em;
+    // Phones: logo above the text
+    @include breakpoint(max-width $small) {
+        grid-template-columns: minmax(0, 1fr);
+        row-gap: 0.8em;
+
+        .cv-logo {
+            height: 2.2em;
 
             img {
-                width: 170px;
+                max-width: 8.5em;
             }
         }
+    }
+}
 
-        .paper-box-text {
-            max-width: 100%;
-            padding-left: 0;
-            order: 2;
-        }
+// News: only the newest $news-visible items show until "Show older news" is clicked
+// (the button is added by the script in _includes/scripts.html; without JavaScript everything shows)
+$news-visible: 5;
+
+.js .news-list:not(.is-expanded) > ul > li:nth-child(n + #{$news-visible + 1}) {
+    display: none;
+}
+
+.news-toggle {
+    margin: -0.6em 0 0 2em;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: $link-color;
+    cursor: pointer;
+
+    &::after {
+        content: " ▾";
     }
 
+    &[aria-expanded="true"]::after {
+        content: " ▴";
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 $scroll_offset : 80px; // sticky masthead is ~59px tall
@@ -316,13 +338,14 @@ h1:before, .anchor:before {
     margin-top: -$scroll_offset;
 }
 
+// Venue label above a paper title
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    padding: 0.1em 0.6em;
     color: white;
     background-color: hsl(220, 100%, 31%);
-    font-size: .8em;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1.5;
 }

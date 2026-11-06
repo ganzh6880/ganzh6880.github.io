@@ -2,7 +2,7 @@
 #
 # Fields
 #   title, authors, venue, summary   text shown on the page ("Zhen Hao Gan" in authors is bolded automatically)
-#   badge                            short label on the thumbnail (optional)
+#   badge                            short label shown above the title (optional)
 #   project, paper, arxiv, code, video   links (all optional)
 #
 # Pulled live from the `project` page when the homepage is viewed (nothing is copied into this repo):
